@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tabu{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  margin: 5% auto 0px auto;
+}
+.tabuLinha{
+  display: flex;
+  flex-direction:row;
+}
+.casa{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+  font-size: 80px;
+  border: 1.5px solid rgb(212, 32, 32);
+}
+.turno{
+  text-align: center;
+  background-color: rgba(169, 169, 169, 0.651);
+  padding: 10px;
+  border: 1.2px solid #000;
+}
+.btnSec{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+.btnJogar{
+  cursor: pointer;
+  width: 300px;
+  padding: 25px;
+  background-color: rgb(131, 131, 201);
+  border-width: 5px;
+  border-radius: 10px;
+  margin: 4% auto auto auto;
+  transition: 650ms;
+}
+.btnJogar:hover{
+  background-color: rgb(117, 117, 173);
+  color: whitesmoke;
+  text-shadow: 1.2px 1.2px 1.0px black;
+  width: 335px;
+  padding: 35px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
